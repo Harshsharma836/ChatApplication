@@ -1,7 +1,14 @@
 
 
  <link rel="stylesheet" href="customcss.css">
-<include src="header.php"></include>
+
+fetch("./header.php")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
 
        <!-- Our Blog : Start -->
      
