@@ -1,0 +1,18 @@
+First Create a Database
+
+CREATE DATABASE harshchatbox;
+
+
+
+
+
+Create a Message Table
+
+CREATE TABLE messages (
+    id int AUTO_INCREMENT ,
+    senderid int,
+    receiverid int
+);
+
+
+Create a Table Registration

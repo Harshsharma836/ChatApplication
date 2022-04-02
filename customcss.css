@@ -1,0 +1,138 @@
+<style>
+    body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+    }   
+    .paragraph{
+        text-indent: 50px;
+     
+        letter-spacing: 3px;
+    }
+
+    .error {
+        color: red;
+    }
+    .errors {
+        color: red;
+    }
+    .email_error {
+        color: red;
+    }
+    .status_error {
+        color: green;
+    }
+    .image{
+        border: 1px solid black;
+        border-radius: 50%;
+        width:50%;
+        height:100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tables{
+        width: 100%;
+    }
+    .tablenews{
+        height:50px;
+    }
+    .newsimage{
+        width: 25%;
+        height: 50px;
+    }
+    .userimage{
+        width: 100%;
+    }
+    .Box{
+        width: 100%;
+        border: 5px solid black;
+        padding: 15px;
+        margin: 15px;
+    }
+    .header{
+        left: 0;
+        width: 100%;
+        background-color: gray;
+    }
+    .footer{
+        background-color: gray;
+    }
+        
+    /*Slide Bar Css*/
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+     
+    .sidebar a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+        border-style: solid;
+        border-width: medium;
+    }
+
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+    /*Fotter Css*/
+
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color:gray;
+       color: white;
+       text-align: center;
+    }
+
+    div.content {
+      margin-left: 250px;
+      padding: 1px 16px;
+    }
+    .horizontal{
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+    .table{
+        border: 3px solid black;
+    }
+
+</style>
