@@ -1,14 +1,19 @@
+<?php
+session_start();
 
+    if(($_SESSION['role']) == 'teacher')
+    {
+        header('location:teacherDashboard.php');
+    }
+    elseif(isset($_SESSION['firstname']))
+    {
+        header('location:adminDashboard.php');
+    }
+?>  
 
- <link rel="stylesheet" href="customcss.css">
-
-fetch("./header.php")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
+<?php $pageTitle = 'Student Registartion Form'; ?>
+<?php   include('header.php'); ?>  <!-- Including Header file -->
+<?php include_once('customcss.css'); ?>
 
        <!-- Our Blog : Start -->
      
