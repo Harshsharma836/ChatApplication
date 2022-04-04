@@ -27,12 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
     <a href="index.php" class="w3-bar-item w3-button">Sharma Collage </a>
     <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
       <a href="registration.php" class="w3-bar-item w3-button">Registraction</a>
       <a href="studentlogin.php" class="w3-bar-item w3-button">Student Login</a>
       <a href="teacherlogin.php" class="w3-bar-item w3-button">Teacher Login</a>
        <a href="adminLogin.php" class="w3-bar-item w3-button">Admin Login</a>
-    </div>
+    
   </div>
 </div>
 <hr>
