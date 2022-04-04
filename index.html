@@ -1,26 +1,34 @@
-<?php
-session_start();
+ 
+<script type="text/javascript" ></script>
+<!-- <a href="howto_google_maps.asp">Google Maps</a><br> -->
+<link rel="stylesheet" type="text/css" href="customcss.css">
+<!-- <?php $pageTitle = 'Student Registartion Form'; ?>
+<?php   include('header.php'); ?> Including Header file --> 
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
+    
+   <script> 
 
-    if(($_SESSION['role']) == 'teacher')
-    {
-        header('location:teacherDashboard.php');
-    }
-    elseif(isset($_SESSION['firstname']))
-    {
-        header('location:adminDashboard.php');
-    }
-?>  
+    // This is for header include.
+    $(function(){
+        $("#header").load("indexHeader.html"); 
+    });
 
-<?php $pageTitle = 'Student Registartion Form'; ?>
-<?php   include('header.php'); ?>  <!-- Including Header file -->
-<?php include_once('customcss.css'); ?>
+    // This is for footer include.
+    $(function(){
+        $("#footer").load("indexFooter.html"); 
+    });
 
-       <!-- Our Blog : Start -->
-     
+</script> 
+
+<div id="header"></div>
+
+
 
         <article>
             <h1 style="text-align: center;"  style="color:blue;"><b>Welcome</b></h1>
-            <p class="paragraph"> This Web application is designed for the intraction between the teaher and the students through the in built chap application  </p>
+            <p class="paragraph"> This Web application is designed for the intraction between the teaher and the students through the in built chat application  </p>
             </p>
         </article>
 
@@ -32,7 +40,7 @@ session_start();
             <hr>
             <p class="paragraph" >Then the user has to login according to the cridentals EmailId and Password and then the Chat Box appears.<hr>
 
-            <p class="paragraph" >If you logined in as a Student then whole Teacher list is fetched from the data base and a student can chat with any teacher just by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select his/her favourite Teacher .<br>
+            <p class="paragraph" >If you logined in as a Student then whole Teacher list is fetched from the data base and a student can chat with any teacher just by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select his/her favourite Teacher .<br>
 
             &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and same as for Teachers when they logedin as a teacher the lists shows all the students .... </p>  
 
@@ -87,4 +95,6 @@ session_start();
         </div>
       </section> -->
     </div>
-<!-- <?php include('footer.php');  ?>  
+
+
+<div id="footer"></div> 
